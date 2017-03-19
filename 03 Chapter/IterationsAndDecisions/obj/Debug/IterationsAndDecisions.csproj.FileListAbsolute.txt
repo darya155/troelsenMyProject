@@ -1,0 +1,9 @@
+E:\PROGRAMMING\Books about C#\My Projects\03-Chapter\05-3th Chapter\IterationsAndDecisions\bin\Debug\IterationsAndDecisions.exe.config
+E:\PROGRAMMING\Books about C#\My Projects\03-Chapter\05-3th Chapter\IterationsAndDecisions\bin\Debug\IterationsAndDecisions.exe
+E:\PROGRAMMING\Books about C#\My Projects\03-Chapter\05-3th Chapter\IterationsAndDecisions\bin\Debug\IterationsAndDecisions.pdb
+E:\PROGRAMMING\Books about C#\My Projects\03-Chapter\05-3th Chapter\IterationsAndDecisions\obj\Debug\IterationsAndDecisions.csprojResolveAssemblyReference.cache
+E:\PROGRAMMING\Books about C#\My Projects\03-Chapter\05-3th Chapter\IterationsAndDecisions\obj\Debug\IterationsAndDecisions.exe
+E:\PROGRAMMING\Books about C#\My Projects\03-Chapter\05-3th Chapter\IterationsAndDecisions\obj\Debug\IterationsAndDecisions.pdb
+E:\PROGRAMMING\02-Troelsen-C#\My Projects\03-Chapter\05-3th Chapter\IterationsAndDecisions\bin\Debug\IterationsAndDecisions.exe.config
+E:\PROGRAMMING\02-Troelsen-C#\My Projects\03-Chapter\05-3th Chapter\IterationsAndDecisions\obj\Debug\IterationsAndDecisions.exe
+E:\PROGRAMMING\02-Troelsen-C#\My Projects\03-Chapter\05-3th Chapter\IterationsAndDecisions\obj\Debug\IterationsAndDecisions.pdb
