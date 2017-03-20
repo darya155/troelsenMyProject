@@ -1,6 +1,0 @@
-E:\PROGRAMMING\Books about C#\My Projects\03-Chapter\05-3th Chapter\ImplicitlyTypeLocalVars\bin\Debug\ImplicitlyTypeLocalVars.exe.config
-E:\PROGRAMMING\Books about C#\My Projects\03-Chapter\05-3th Chapter\ImplicitlyTypeLocalVars\bin\Debug\ImplicitlyTypeLocalVars.exe
-E:\PROGRAMMING\Books about C#\My Projects\03-Chapter\05-3th Chapter\ImplicitlyTypeLocalVars\bin\Debug\ImplicitlyTypeLocalVars.pdb
-E:\PROGRAMMING\Books about C#\My Projects\03-Chapter\05-3th Chapter\ImplicitlyTypeLocalVars\obj\Debug\ImplicitlyTypeLocalVars.exe
-E:\PROGRAMMING\Books about C#\My Projects\03-Chapter\05-3th Chapter\ImplicitlyTypeLocalVars\obj\Debug\ImplicitlyTypeLocalVars.pdb
-E:\PROGRAMMING\Books about C#\My Projects\03-Chapter\05-3th Chapter\ImplicitlyTypeLocalVars\obj\Debug\07-ImplicitlyTypeLocalVars.csprojResolveAssemblyReference.cache

@@ -1,7 +1,0 @@
-E:\PROGRAMMING\Books about C#\My Projects\03-Chapter\03-Chapter\03-Chapter\bin\Debug\03-Chapter.exe.config
-E:\PROGRAMMING\Books about C#\My Projects\03-Chapter\05-3th Chapter\03-Chapter\bin\Debug\03-Chapter.exe.config
-E:\PROGRAMMING\Books about C#\My Projects\03-Chapter\05-3th Chapter\03-Chapter\bin\Debug\03-Chapter.exe
-E:\PROGRAMMING\Books about C#\My Projects\03-Chapter\05-3th Chapter\03-Chapter\bin\Debug\03-Chapter.pdb
-E:\PROGRAMMING\Books about C#\My Projects\03-Chapter\05-3th Chapter\03-Chapter\obj\Debug\03-Chapter.csprojResolveAssemblyReference.cache
-E:\PROGRAMMING\Books about C#\My Projects\03-Chapter\05-3th Chapter\03-Chapter\obj\Debug\03-Chapter.exe
-E:\PROGRAMMING\Books about C#\My Projects\03-Chapter\05-3th Chapter\03-Chapter\obj\Debug\03-Chapter.pdb

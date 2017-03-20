@@ -1,6 +1,0 @@
-E:\PROGRAMMING\Books about C#\My Projects\03-Chapter\05-3th Chapter\TypeConversions\bin\Debug\TypeConversions.exe.config
-E:\PROGRAMMING\Books about C#\My Projects\03-Chapter\05-3th Chapter\TypeConversions\bin\Debug\TypeConversions.exe
-E:\PROGRAMMING\Books about C#\My Projects\03-Chapter\05-3th Chapter\TypeConversions\bin\Debug\TypeConversions.pdb
-E:\PROGRAMMING\Books about C#\My Projects\03-Chapter\05-3th Chapter\TypeConversions\obj\Debug\TypeConversions.exe
-E:\PROGRAMMING\Books about C#\My Projects\03-Chapter\05-3th Chapter\TypeConversions\obj\Debug\TypeConversions.pdb
-E:\PROGRAMMING\Books about C#\My Projects\03-Chapter\05-3th Chapter\TypeConversions\obj\Debug\TypeConversions.csprojResolveAssemblyReference.cache
