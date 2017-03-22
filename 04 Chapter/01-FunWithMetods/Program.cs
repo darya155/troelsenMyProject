@@ -49,7 +49,10 @@ namespace _01_FunWithMetods
             Console.WriteLine("Average of data is: {0}", average);
             //среднее из 0 равно 0
             Console.WriteLine("Average of data is: {0}", CalculateAverage());
+            Console.WriteLine();
 
+            EnterLogData("Oh no! Grid can`t find data");
+            EnterLogData("Oh no! I can`t find the payroll data", "CFO");
         }
 
         #region Pass by value
@@ -105,6 +108,15 @@ namespace _01_FunWithMetods
             for (int i = 0; i < values.Length; i++)
                 sum += values[i];
             return (sum / values.Length);
+        }
+        #endregion
+
+        #region необязательные параметры (optional/names params)
+        static void EnterLogData(string message, string owner = "Programmer")
+        {
+            Console.Beep();
+            Console.WriteLine("Error: {0}", message);
+            Console.WriteLine("Owner of Error: {0}", owner);
         }
         #endregion
     }
