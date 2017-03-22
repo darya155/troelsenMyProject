@@ -38,6 +38,18 @@ namespace _01_FunWithMetods
             SwapStrings(ref str1, ref str2);
             Console.WriteLine($"After: {str1}, {str2}");
             Console.WriteLine();
+
+            //передать разделяемый запятыми список значений double
+            double average;
+            average = CalculateAverage(4.0, 3.2, 5.7, 64.22, 87.2);
+            Console.WriteLine("Average of data is: {0}", average);
+            //или передать массив значений double
+            double[] data = { 4.0, 3.2, 5.7 };
+            average = CalculateAverage(data);
+            Console.WriteLine("Average of data is: {0}", average);
+            //среднее из 0 равно 0
+            Console.WriteLine("Average of data is: {0}", CalculateAverage());
+
         }
 
         #region Pass by value
@@ -82,8 +94,18 @@ namespace _01_FunWithMetods
         #endregion
 
         #region params keyword
-        //
+        //возвращение среднего из некоторого количества значений double
         //return average of "some number" of doubles
+        static double CalculateAverage(params double[] values)
+        {
+            Console.WriteLine("You sent me {0} doubles.", values.Length);
+            double sum = 0;
+            if (values.Length == 0)
+                return sum;
+            for (int i = 0; i < values.Length; i++)
+                sum += values[i];
+            return (sum / values.Length);
+        }
         #endregion
     }
 }
