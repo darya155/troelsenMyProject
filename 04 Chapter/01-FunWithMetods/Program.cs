@@ -53,6 +53,21 @@ namespace _01_FunWithMetods
 
             EnterLogData("Oh no! Grid can`t find data");
             EnterLogData("Oh no! I can`t find the payroll data", "CFO");
+            Console.WriteLine();
+
+
+            DisplayFancyMessage(message: "Wow! Very Fancy indeed!",
+                textColor: ConsoleColor.DarkRed,
+                backgroundColor: ConsoleColor.White);
+
+            DisplayFancyMessage(backgroundColor: ConsoleColor.Green,
+                message: "Testing...",
+                textColor: ConsoleColor.DarkBlue);
+            Console.WriteLine();
+
+            
+            DisplayFancyMassageNext(message: "Hello!");
+            DisplayFancyMassageNext(backgroundColor: ConsoleColor.Green);
         }
 
         #region Pass by value
@@ -118,6 +133,48 @@ namespace _01_FunWithMetods
             Console.WriteLine("Error: {0}", message);
             Console.WriteLine("Owner of Error: {0}", owner);
         }
+        #endregion
+
+        #region Приминение именованных аргументов - 1
+        static void DisplayFancyMessage(ConsoleColor textColor, 
+            ConsoleColor backgroundColor, string message)
+        {
+            //сохранить старые цвета с целью их 
+            //восстановления после вывода сообщения.
+            ConsoleColor oldTextColor = Console.ForegroundColor;
+            ConsoleColor oldBackgroundColor = Console.BackgroundColor;
+
+            //установить новые цвета и вывести сообщение
+            Console.ForegroundColor = textColor;
+            Console.BackgroundColor = backgroundColor;
+            Console.WriteLine(message);
+
+            //восстановить предыдущие цвета
+            Console.ForegroundColor = oldTextColor;
+            Console.BackgroundColor = oldBackgroundColor;
+        }
+        #endregion
+
+        #region Применение именовынных аргументов - 2
+        static void DisplayFancyMassageNext(ConsoleColor textColor = ConsoleColor.Blue, 
+            ConsoleColor backgroundColor = ConsoleColor.White, 
+            string message = "Test Message")
+        {
+            //сохранить старые цвета с целью их 
+            //восстановления после вывода сообщения.
+            ConsoleColor oldTextColor = Console.ForegroundColor;
+            ConsoleColor oldBackgroundColor = Console.BackgroundColor;
+
+            //установить новые цвета и вывести сообщение
+            Console.ForegroundColor = textColor;
+            Console.BackgroundColor = backgroundColor;
+            Console.WriteLine(message);
+
+            //восстановить предыдущие цвета
+            Console.ForegroundColor = oldTextColor;
+            Console.BackgroundColor = oldBackgroundColor;
+        }
+
         #endregion
     }
 }
