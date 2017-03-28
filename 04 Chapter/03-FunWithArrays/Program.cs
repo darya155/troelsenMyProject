@@ -14,6 +14,7 @@ namespace _03_FunWithArrays
             SimpleArrays();
             ArrayInitialization();
             DeclareImplisitArrays();
+            ArrayOfObjects();
         }
 
         #region создание и заполнение простого массива
@@ -66,7 +67,7 @@ namespace _03_FunWithArrays
         static void DeclareImplisitArrays()
         {
             Console.WriteLine("=> Implisit Arrray Initialisation.");
-            //а - на самом деле int[]
+            //а - на самом деле int[] 
             var a = new[] { 1, 10, 100, 1000 };
             Console.WriteLine("a is a: {0}", a.ToString());
             //b - на самом деле double[]
@@ -78,6 +79,25 @@ namespace _03_FunWithArrays
             Console.WriteLine();
         }
 
+        #endregion
+
+        #region определение массива объектов
+        static void ArrayOfObjects()
+        {
+            Console.WriteLine("=> Array of Objects.");
+            //массив объектов может содержать всё что угодно
+            object[] myObjects = new object[4];
+            myObjects[0] = 10;
+            myObjects[1] = false;
+            myObjects[2] = new DateTime(1969, 3, 24);
+            myObjects[3] = "Form & Void";
+            foreach (object obj in myObjects)
+            {
+                //вывести тип и значение каждого элемента в массиве
+                Console.WriteLine("Type: {0}, Valye: {1}", obj.GetType(), obj);
+            }
+            Console.WriteLine();
+        }
         #endregion
     }
 }
