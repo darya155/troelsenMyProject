@@ -15,6 +15,8 @@ namespace _03_FunWithArrays
             ArrayInitialization();
             DeclareImplisitArrays();
             ArrayOfObjects();
+            RectMultidimensionalArray();
+            JaggedMultidimentionalArray();
         }
 
         #region создание и заполнение простого массива
@@ -63,7 +65,7 @@ namespace _03_FunWithArrays
         }
         #endregion
 
-        #region неявно типизированные локальные массивы
+        #region неявно типизированные локальные массивы var
         static void DeclareImplisitArrays()
         {
             Console.WriteLine("=> Implisit Arrray Initialisation.");
@@ -81,7 +83,7 @@ namespace _03_FunWithArrays
 
         #endregion
 
-        #region определение массива объектов
+        #region определение массива объектов object[]
         static void ArrayOfObjects()
         {
             Console.WriteLine("=> Array of Objects.");
@@ -95,6 +97,60 @@ namespace _03_FunWithArrays
             {
                 //вывести тип и значение каждого элемента в массиве
                 Console.WriteLine("Type: {0}, Valye: {1}", obj.GetType(), obj);
+            }
+            Console.WriteLine();
+        }
+        #endregion
+
+        #region прямоугольный многомерный массив
+        static void RectMultidimensionalArray()
+        {
+            Console.WriteLine("=> Rectangular multidimensional array.");
+            //прямоугольный многомерный массив
+            int[,] myMatrix;
+            myMatrix = new int[6, 6];
+            //заполнить массив 6*6
+            for (int i = 0; i < 6; i++)
+            {
+                for (int j = 0; j < 6; j++)
+                {
+                    myMatrix[i, j] = i * j;
+                }
+            }
+            //вывести массив 6*6
+            for (int i = 0; i < 6; i++)
+            {
+                for (int j = 0; j < 6; j++)
+                {
+                    Console.Write(myMatrix[i, j] + "\t");                    
+                }
+                    Console.WriteLine();
+            }
+            Console.WriteLine();
+        }
+
+        #endregion
+
+        #region зубчатый многомерный массив
+        static void JaggedMultidimentionalArray()
+        {
+            Console.WriteLine("=> Jagged multidimentional array.");
+            //зубчатый многомерный массив (т.е. массив массивов)
+            //здесь мы имеем массив из 5 разных массивов
+            int[][] myJagArray = new int[5][];
+            //создать зубчатый массив
+            for (int i = 0; i < myJagArray.Length; i++)
+            {
+                myJagArray[i] = new int[i + 7];
+            }
+            //вывести каждую строку (каждый элемент имеет стандартное значение 0)
+            for (int i = 0; i < 5; i++)
+            {
+                for (int j = 0; j < myJagArray[i].Length; j++)
+                {
+                    Console.Write(myJagArray[i][j] + " ");                   
+                }
+                Console.WriteLine();
             }
             Console.WriteLine();
         }
