@@ -17,6 +17,7 @@ namespace _03_FunWithArrays
             ArrayOfObjects();
             RectMultidimensionalArray();
             JaggedMultidimentionalArray();
+            PassAndReceiveArrays();
         }
 
         #region создание и заполнение простого массива
@@ -151,6 +152,40 @@ namespace _03_FunWithArrays
                     Console.Write(myJagArray[i][j] + " ");                   
                 }
                 Console.WriteLine();
+            }
+            Console.WriteLine();
+        }
+        #endregion
+
+        #region использование массивов в качестве аргументов и возвращаемых значений
+        //первый метод принимает входящий массив значений int и выводит все его эл.на консоль
+        static void PrintArray(int[] myInts)
+        {
+            for (int i = 0; i < myInts.Length; i++)
+            {
+                Console.WriteLine($"Item {i} is {myInts[i]}");
+            }
+        }
+
+        //второй метод заполняет массив и возвращает его вызывающему коду
+        static string[] GetStringArray()
+        {
+            string[] theStrings = { "Hello", "from", "GetStringArray" };
+            return theStrings;
+        }
+
+        //эти два метода могут быть вызваны след.образом
+        static void PassAndReceiveArrays()
+        {
+            Console.WriteLine("=> Arrays as params and return values.");
+            //передать массив в качестве параметра
+            int[] ages = { 20, 22, 23, 0 };
+            PrintArray(ages);
+            //получить массив в качестве возвращаемого значения
+            string[] strs = GetStringArray();
+            foreach (string s in strs)
+            {
+                Console.WriteLine(s);
             }
             Console.WriteLine();
         }
