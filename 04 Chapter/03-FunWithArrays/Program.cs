@@ -18,6 +18,7 @@ namespace _03_FunWithArrays
             RectMultidimensionalArray();
             JaggedMultidimentionalArray();
             PassAndReceiveArrays();
+            SystemArrayFunctionaly();
         }
 
         #region создание и заполнение простого массива
@@ -186,6 +187,40 @@ namespace _03_FunWithArrays
             foreach (string s in strs)
             {
                 Console.WriteLine(s);
+            }
+            Console.WriteLine();
+        }
+        #endregion
+
+        #region Работа членов класса System.Array - Reverse() и Clear()
+        static void SystemArrayFunctionaly()
+        {
+            Console.WriteLine("=> Working with System.Array.");
+            //инициализировать элементы при запуске
+            string[] gothicBands = { "Tones on Tail", "Bauhaus", "Sisters of Mercy" };
+            //вывести имена в порядке их объявления
+            Console.WriteLine("-> Here is the array:");
+            for (int i = 0; i < gothicBands.Length; i++)
+            {
+                Console.Write(gothicBands[i] + ", ");
+            }
+            Console.WriteLine("\n");
+
+            //обратить порядок следования элементов
+            Array.Reverse(gothicBands);
+            Console.WriteLine("-> The revers array");
+            for (int i = 0; i < gothicBands.Length; i++)
+            {
+                Console.Write(gothicBands[i] + ", ");
+            }
+            Console.WriteLine("\n");
+
+            //удалить все элементы, кроме последнего
+            Console.WriteLine("-> Cleared out but one...");
+            Array.Clear(gothicBands, 1, 2);
+            for (int i = 0; i < gothicBands.Length; i++)
+            {
+                Console.Write(gothicBands[i] + ", ");
             }
             Console.WriteLine();
         }
